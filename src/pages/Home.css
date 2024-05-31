@@ -1,7 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .home {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    background: #272d2dff;
+}
+
+.profil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40vh;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    color: #272d2dff;
+}
+
+.job {
+    font-size: 40px;
+    color: #51a3a3ff;
+}
+
+.photo {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 20vh;
+}
+
+.photo img {
+    width: 400px;
+    clip-path: circle(35% at 50% 50%);
 }
