@@ -9,6 +9,7 @@ body {
     align-items: center;
     justify-content: center;
     background: #272d2dff;
+    height: 100dvh;
 }
 
 .profil {
@@ -16,13 +17,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40vh;
 }
 
 .name {
     font-size: 30px;
     font-weight: bold;
-    color: #272d2dff;
+    color: white;
 }
 
 .job {
@@ -34,7 +34,6 @@ body {
     display: flex;
     justify-content: right;
     align-items: center;
-    margin: 20vh;
 }
 
 .photo img {
