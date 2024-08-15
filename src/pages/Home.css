@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: #E0E0E0;
+    background: #b4b8b3;
 }
 
 .home {
@@ -14,7 +14,7 @@ body {
     overflow-y: auto;
 }
 
-.information {
+.information-section {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,7 +32,7 @@ body {
 .name {
     font-size: 30px;
     font-weight: bold;
-    color: #343A40;
+    color: #4182cc;
 }
 
 .job {
@@ -90,4 +90,37 @@ body {
         opacity: 0;
         transform: rotate(45deg) translate(20px, 20px);
     }
+}
+
+.about-me-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f3e8eeff;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.code-picture {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.about-me h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #00274C;
+}
+
+.about-me p {
+    font-size: 20px;
+    color: #343A40;
 }
