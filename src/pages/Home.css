@@ -1,15 +1,25 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
+    background: #E0E0E0;
 }
 
 .home {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.information {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: #272d2dff;
-    height: 100dvh;
+    height: 100vh;
 }
 
 .profil {
@@ -22,12 +32,12 @@ body {
 .name {
     font-size: 30px;
     font-weight: bold;
-    color: white;
+    color: #343A40;
 }
 
 .job {
-    font-size: 40px;
-    color: #51a3a3ff;
+    font-size: 80px;
+    color: #00274C;
 }
 
 .photo {
@@ -39,4 +49,45 @@ body {
 .photo img {
     width: 400px;
     clip-path: circle(35% at 50% 50%);
+}
+
+.arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    cursor: pointer;
+}
+
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid #00274C;
+    border-right: 5px solid #00274C;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
 }
