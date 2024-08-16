@@ -97,8 +97,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
-    padding: 0 20px;
+    height: 106vh;
     background: #f3e8eeff;
 }
 
@@ -131,4 +130,12 @@ body {
 .about-me p {
     font-size: 20px;
     color: #343A40;
+}
+
+.hardskills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }

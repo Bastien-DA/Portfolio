@@ -1,5 +1,6 @@
 import './Home.css'
 import { NavBar } from '../components/NavBar.tsx'
+import { FlipCard } from '../components/FlipCard.tsx'
 import { useNavigate } from "react-router-dom";
 
 function Home() {
@@ -43,7 +44,10 @@ function Home() {
                 </section>
             </div>
             <div className="Hardskills">
-                
+                <FlipCard speciality="Web" competences="HTML, CSS, JavaScript, React, NextJS, Golang, PHP, Python (Django, FastApi)"/>
+                <FlipCard speciality="Mobile" competences="Flutter"/>
+                <FlipCard speciality="Dekstop" competences="C#, Java, Python"/>
+                <FlipCard speciality={"Autre"} competences={"Git, Docker, SQL, Mongo"}/>
             </div>
         </main>
     )
