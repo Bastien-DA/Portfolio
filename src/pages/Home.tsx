@@ -34,13 +34,16 @@ function Home() {
                 </div>
             </div>
             <div className="about-me-section">
-                <section className="code-picture">
+                <section className="code-picture pl-40">
                     <img src="/src/assets/code.jpg" alt="code"/>
                 </section>
-                <section className="about-me">
-                    <h1>A propos</h1>
+                <section className="about-me ml-40 pr-40">
+                    <h1 className="mb-10">A propos</h1>
                     <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Amet magna consectetur rhoncus sagittis faucibus senectus leo. Aliquet sagittis neque et ultrices nascetur morbi venenatis. Ad donec nisl cursus lobortis lacinia ornare. Turpis nisl fermentum interdum efficitur integer parturient sociosqu ullamcorper. Congue sagittis vivamus tincidunt egestas; tristique facilisis molestie dis. Potenti aenean proin ipsum cubilia laoreet quam. Duis pretium a malesuada ornare, ante aptent hac vulputate. Morbi arcu auctor hendrerit cras potenti diam imperdiet! Enim dictum libero senectus iaculis sagittis suspendisse enim et imperdiet.</p>
                 </section>
+            </div>
+            <div className="Hardskills">
+                
             </div>
         </main>
     )

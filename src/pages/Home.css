@@ -96,12 +96,14 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 100vh;
+    padding: 0 20px;
     background: #f3e8eeff;
 }
 
 .about-me {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,9 +111,15 @@ body {
 }
 
 .code-picture {
+    flex: 1;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
+}
+
+.code-picture img {
+    width: 6000px;
+    height: 600px;
 }
 
 .about-me h1 {
