@@ -1,6 +1,6 @@
 import './Home.css'
 import { NavBar } from '../components/NavBar.tsx'
-import { FlipCard } from '../components/FlipCard.tsx'
+import { CircleCard } from '../components/CircleCard.tsx'
 import { useNavigate } from "react-router-dom";
 
 function Home() {
@@ -16,7 +16,7 @@ function Home() {
                 <NavBar />
             </header>
             <div className="information-section">
-                <section className="profil mr-96">
+                <section className="profil">
                     <h2 className="name">Bastien De Amezaga</h2>
                     <h1 className="job">DEVELOPPEUR JUNIOR</h1>
                     <button type="button"
@@ -25,7 +25,7 @@ function Home() {
                         Contact
                     </button>
                 </section>
-                <section className="photo ml-85">
+                <section className="photo">
                     <img src="/src/assets/photo-de-profil.JPG" alt="Avatar de Bastien De Amezaga" />
                 </section>
                 <div className="arrow">
@@ -43,11 +43,17 @@ function Home() {
                     <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Amet magna consectetur rhoncus sagittis faucibus senectus leo. Aliquet sagittis neque et ultrices nascetur morbi venenatis. Ad donec nisl cursus lobortis lacinia ornare. Turpis nisl fermentum interdum efficitur integer parturient sociosqu ullamcorper. Congue sagittis vivamus tincidunt egestas; tristique facilisis molestie dis. Potenti aenean proin ipsum cubilia laoreet quam. Duis pretium a malesuada ornare, ante aptent hac vulputate. Morbi arcu auctor hendrerit cras potenti diam imperdiet! Enim dictum libero senectus iaculis sagittis suspendisse enim et imperdiet.</p>
                 </section>
             </div>
-            <div className="Hardskills">
-                <FlipCard speciality="Web" competences="HTML, CSS, JavaScript, React, NextJS, Golang, PHP, Python (Django, FastApi)"/>
-                <FlipCard speciality="Mobile" competences="Flutter"/>
-                <FlipCard speciality="Dekstop" competences="C#, Java, Python"/>
-                <FlipCard speciality={"Autre"} competences={"Git, Docker, SQL, Mongo"}/>
+            <div className="hardskills-section">
+                <div className="hardskills-title">
+                    <h1>Hardskills</h1>
+                    <h2>Les principaux langages</h2>
+                </div>
+                <div className={"cards-container"}>
+                    <CircleCard title={"Web"} language_image1={"/src/assets/react.svg"} language_name1={"React"} language_image2={"/src/assets/go.svg"} language_name2={"Golang"} language_image3={"/src/assets/fastapi.svg"} language_name3={"FastApi"}/>
+                    <CircleCard title={"Mobile"} language_image1={"/src/assets/flutter.svg"} language_name1={"Flutter"}/>
+                    <CircleCard title={"Desktop"} language_image1={"/src/assets/csharp.svg"} language_name1={"C#"} language_image2={"/src/assets/java.svg"} language_name2={"Java"} language_image3={"/src/assets/python.svg"} language_name3={"Python"}/>
+                    <CircleCard title={"Autre"} language_image1={"/src/assets/docker.svg"} language_name1={"Docker"} language_image2={"/src/assets/mongodb.svg"} language_name2={"MongoDB"} language_image3={"/src/assets/git.svg"} language_name3={"Git"}/>
+                </div>
             </div>
         </main>
     )
