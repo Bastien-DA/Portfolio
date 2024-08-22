@@ -1,6 +1,7 @@
 import './Home.css'
 import { NavBar } from '../components/NavBar.tsx'
 import { CircleCard } from '../components/CircleCard.tsx'
+import { Footer } from '../components/Footer.tsx'
 import { useNavigate } from "react-router-dom";
 
 function Home() {
@@ -40,7 +41,10 @@ function Home() {
                 </section>
                 <section className="about-me ml-40 pr-40">
                     <h1 className="mb-10">A propos</h1>
-                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Amet magna consectetur rhoncus sagittis faucibus senectus leo. Aliquet sagittis neque et ultrices nascetur morbi venenatis. Ad donec nisl cursus lobortis lacinia ornare. Turpis nisl fermentum interdum efficitur integer parturient sociosqu ullamcorper. Congue sagittis vivamus tincidunt egestas; tristique facilisis molestie dis. Potenti aenean proin ipsum cubilia laoreet quam. Duis pretium a malesuada ornare, ante aptent hac vulputate. Morbi arcu auctor hendrerit cras potenti diam imperdiet! Enim dictum libero senectus iaculis sagittis suspendisse enim et imperdiet.</p>
+                    <p>Actuellement en Bachelor 3 à Ynov Bordeaux Campus, j'ai pu apprendre et approfondir de multiples
+                        softskills et hardskills. Cela a pu me donner de l'expérience dans les multiples domaines du développement
+                        web, mobile et desktop. Je suis passionné par le développement et apprendre de nouvelles choses.
+                    </p>
                 </section>
             </div>
             <div className="hardskills-section">
@@ -55,6 +59,7 @@ function Home() {
                     <CircleCard title={"Autre"} language_image1={"/src/assets/docker.svg"} language_name1={"Docker"} language_image2={"/src/assets/mongodb.svg"} language_name2={"MongoDB"} language_image3={"/src/assets/git.svg"} language_name3={"Git"}/>
                 </div>
             </div>
+            <Footer />
         </main>
     )
 }
