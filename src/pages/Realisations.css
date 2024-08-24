@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.specialites {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.section-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: 18dvw;
+    padding-left: 18dvw;
+    height: 100dvh;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8rem;
+}
+
+
+
