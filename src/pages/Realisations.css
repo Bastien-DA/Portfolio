@@ -1,7 +1,7 @@
-body {
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    height: 100vh;
 }
 
 .specialites {
@@ -11,19 +11,19 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .section-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-right: 18dvw;
-    padding-left: 18dvw;
-    height: 100dvh;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 8rem;
+    gap: 12dvh ;
+    margin: 10dvh 10dvw;
+    padding: 2rem;
+    height: auto;
 }
 
-
+.specialites > footer {
+    margin-top: auto;
+}
 

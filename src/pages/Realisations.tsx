@@ -1,11 +1,11 @@
-import './Realisations.css'
-import {NavBar} from "../components/NavBar.tsx";
-import {Footer} from "../components/Footer.tsx";
-import {LanguageCard} from "../components/LanguageCard.tsx";
-import {useParams} from "react-router-dom";
+import './Realisations.css';
+import { NavBar } from '../components/NavBar.tsx';
+import { Footer } from '../components/Footer.tsx';
+import { LanguageCard } from '../components/LanguageCard.tsx';
+import { useParams } from 'react-router-dom';
 
 function Realisations() {
-    const {specialite} = useParams();
+    const { specialite } = useParams();
 
     const webCards = [
         {
@@ -57,6 +57,13 @@ function Realisations() {
             projectUrl: "https://github.com/Logards/Calculatrice-cSharp"
         },
         {
+            image: "/src/assets/weatherapp.png",
+            title: "WeatherApp",
+            url: "https://docs.microsoft.com/fr-fr/dotnet/csharp/",
+            description: "Projet réalisé dans le cadre de ma formation à Ynov Campus Bordeaux pour utiliser toute les compétences acquise durant le parcours csharp et approfondir les connaissances dans le framework Avalonia.",
+            projectUrl: "https://github.com/Manon-Arc/WeatherApp"
+        },
+        {
             image: "/src/assets/python-code.webp",
             title: "Python Blyat",
             url: "https://www.python.org/",
@@ -65,13 +72,47 @@ function Realisations() {
         }
     ];
 
+    const otherCards = [
+        {
+            image: "/src/assets/docker-code.png",
+            title: "Basket-API",
+            url: "https://www.docker.com/",
+            description: "Projet réalisé dans le cadre de ma formation à Ynov Campus Bordeaux. Projet compensatoire lié au stage. API dockerisé avec un PhpMyAdmin et un MySQl.",
+            projectUrl: "https://github.com/Logards/Basket-API"
+        },
+        {
+            image: "/src/assets/mongodb-code.webp",
+            title: "MongoDB",
+            url: "https://www.mongodb.com/",
+            description: "Suite du projet LMCV ou le but était de creer un site pour les mains courantes en course. L'API est dockerisé avec un Mongodb et un mongo express.",
+            projectUrl: ""
+        },
+        {
+            image: "/src/assets/git-branch.jpg",
+            title: "Git",
+            url: "https://git-scm.com/",
+            description: "Voici le lien de mon github où vous pourrez retrouver tous mes projets réalisés en dehors de ma formation à Ynov Campus Bordeaux.",
+            projectUrl: "https://github.com/Bastien-DA"
+        }
+    ];
+
+    const allCards = webCards.concat(mobileCards, desktopCards, otherCards);
+
+    const filteredCards = specialite ? allCards.filter(card => {
+        if (specialite === "web") return webCards.includes(card);
+        if (specialite === "mobile") return mobileCards.includes(card);
+        if (specialite === "desktop") return desktopCards.includes(card);
+        if (specialite === "autre") return otherCards.includes(card);
+        return false;
+    }) : allCards;
+
     return (
         <main className="specialites">
             <header>
                 <NavBar />
             </header>
             <div className={"section-card"}>
-                {specialite === "web" && webCards.map((card, index) => (
+                {filteredCards.map((card, index) => (
                     <LanguageCard
                         key={index}
                         image={card.image}
@@ -81,27 +122,6 @@ function Realisations() {
                         projectUrl={card.projectUrl}
                     />
                 ))}
-                {specialite === "mobile" && mobileCards.map((card, index) => (
-                    <LanguageCard
-                        key={index}
-                        image={card.image}
-                        title={card.title}
-                        url={card.url}
-                        description={card.description}
-                        projectUrl={card.projectUrl}
-                    />
-                ))}
-                {specialite === "desktop" && desktopCards.map((card, index) => (
-                    <LanguageCard
-                        key={index}
-                        image={card.image}
-                        title={card.title}
-                        url={card.url}
-                        description={card.description}
-                        projectUrl={card.projectUrl}
-                    />
-                ))}
-                {}
             </div>
             <footer>
                 <Footer />
