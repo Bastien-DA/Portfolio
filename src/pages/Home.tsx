@@ -2,13 +2,16 @@ import './Home.css'
 import { NavBar } from '../components/NavBar.tsx'
 import { CircleCard } from '../components/CircleCard.tsx'
 import { Footer } from '../components/Footer.tsx'
-import { useNavigate } from "react-router-dom";
 
 function Home() {
-    const navigate = useNavigate()
 
-    const handleContactClick = () => {
-        navigate('/contact')
+    const handleDownloadCV = () => {
+        const link = document.createElement('a')
+        link.href = '/cv.pdf'
+        link.download = 'cv.pdf'
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
     }
 
     return (
@@ -22,8 +25,8 @@ function Home() {
                     <h1 className="job">DEVELOPPEUR JUNIOR</h1>
                     <button type="button"
                             className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 mt-8"
-                            onClick={handleContactClick}>
-                        Contact
+                            onClick={handleDownloadCV}>
+                        Mon CV
                     </button>
                 </section>
                 <section className="photo">

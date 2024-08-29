@@ -21,10 +21,6 @@ body {
     padding-right: 18dvw;
     padding-left: 18dvw;
     height: 100dvh;
-    background-image: url('src/assets/photo-de-profil.jpg'), linear-gradient(white 40%);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 }
 
 .profil {
