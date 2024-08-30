@@ -1,4 +1,4 @@
-import './LanguageCard.css'
+import './SquareCard.css'
 
 interface LanguageCardProps {
     image: string;
@@ -8,7 +8,7 @@ interface LanguageCardProps {
     projectUrl: string;
 }
 
-export function LanguageCard({image, title, url, description, projectUrl}: LanguageCardProps) {
+export function SquareCard({image, title, url, description, projectUrl}: LanguageCardProps) {
     return (
         <div className={"language-card"}>
             <div

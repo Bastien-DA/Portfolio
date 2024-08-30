@@ -1,7 +1,7 @@
 import './Realisations.css';
 import { NavBar } from '../components/NavBar.tsx';
 import { Footer } from '../components/Footer.tsx';
-import { LanguageCard } from '../components/LanguageCard.tsx';
+import { SquareCard } from '../components/SquareCard.tsx';
 import { useParams } from 'react-router-dom';
 
 function Realisations() {
@@ -113,7 +113,7 @@ function Realisations() {
             </header>
             <div className={"section-card"}>
                 {filteredCards.map((card, index) => (
-                    <LanguageCard
+                    <SquareCard
                         key={index}
                         image={card.image}
                         title={card.title}

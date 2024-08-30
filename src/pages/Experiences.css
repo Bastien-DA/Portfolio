@@ -1,0 +1,88 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.experiences {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.all-experiences {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 150dvh;
+}
+
+.entreprise-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    gap: 10dvh;
+}
+
+.entreprise-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.entreprise-info img {
+    width: 600px;
+    clip-path: circle(35% at 50% 50%);
+}
+
+.entreprise-info h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #4182cc;
+}
+
+.entreprise-info p {
+    font-size: 1.3rem;
+    max-width: 40dvw;
+    color: #000;
+    margin: 0;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 75dvw;
+    gap: 20px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+}
+
+.article p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
