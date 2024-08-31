@@ -1,32 +1,9 @@
 import './Contact.css'
 import {NavBar} from "../components/NavBar.tsx";
 import {Footer} from "../components/Footer.tsx";
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
 
 function Contact() {
 
-    const form = useRef();
-    const public_key = "bEQv2Lg3Zq-84eb2o";
-    const serviceId = "service_7c8i70m";
-    const templateId = "Contact_Template";
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs
-            .sendForm(serviceId, templateId, form.current, {
-                publicKey: 'YOUR_PUBLIC_KEY',
-            })
-            .then(
-                () => {
-                    console.log('SUCCESS!');
-                },
-                (error) => {
-                    console.log('FAILED...', error.text);
-                },
-            );
-    }
 
     return (
         <main className={"contact"}>
@@ -41,7 +18,7 @@ function Contact() {
                             Une question sur mon parcours ou sur mon cv n'hésitez pas à me contacter (ceci est en cours de développement)
                             Voici a l'attendant mon numero de telephone : 0760027781 et mon email : deamezagabastien@outlook.fr
                         </p>
-                        <form ref={form} onSubmit={sendEmail} className="space-y-8">
+                        <form className="space-y-8">
                             <div>
                                 <label htmlFor="email"
                                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
