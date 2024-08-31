@@ -18,7 +18,7 @@ html, body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 150dvh;
+    height: 100dvh;
 }
 
 .entreprise-container {

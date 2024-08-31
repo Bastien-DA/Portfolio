@@ -28,7 +28,7 @@ function Experiences() {
             </header>
             <div className="all-experiences">
                 {!experience &&
-                    <RectangularCard image={"/src/assets/panier-basket.png"} title={"BasketData"} url={"/experiences/1"}
+                    <RectangularCard image={"/public/assets/panier-basket.png"} title={"BasketData"} url={"/experiences/1"}
                                      listElements={[
                                          "Développement d'une api en python avec fast api",
                                          "Déploiement de l'api et de la base de données Sqlite avec docker",
