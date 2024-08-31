@@ -30,7 +30,7 @@ function Home() {
                     </button>
                 </section>
                 <section className="photo">
-                    <img src="/public/assets/photo-de-profil.JPG" alt="Avatar de Bastien De Amezaga" />
+                    <img src="/assets/photo-de-profil.JPG" alt="Avatar de Bastien De Amezaga" />
                 </section>
                 <div className="arrow">
                     <span></span>
@@ -40,7 +40,7 @@ function Home() {
             </div>
             <div className="about-me-section">
                 <section className="code-picture pl-40">
-                    <img src="/public/assets/code.jpg" alt="code"/>
+                    <img src="/assets/code.jpg" alt="code"/>
                 </section>
                 <section className="about-me ml-40 pr-40">
                     <h1 className="mb-10">A propos</h1>
@@ -56,10 +56,10 @@ function Home() {
                     <h2>Les principaux langages</h2>
                 </div>
                 <div className={"cards-container"}>
-                    <CircleCard title={"Web"} language_image1={"/public/assets/react.svg"} language_name1={"React"} language_image2={"/public/assets/go.svg"} language_name2={"Golang"} language_image3={"/public/assets/fastapi.svg"} language_name3={"FastApi"}/>
-                    <CircleCard title={"Mobile"} language_image1={"/public/assets/flutter.svg"} language_name1={"Flutter"}/>
-                    <CircleCard title={"Desktop"} language_image1={"/public/assets/csharp.svg"} language_name1={"C#"} language_image2={"/public/assets/java.svg"} language_name2={"Java"} language_image3={"/public/assets/python.svg"} language_name3={"Python"}/>
-                    <CircleCard title={"Autre"} language_image1={"/public/assets/docker.svg"} language_name1={"Docker"} language_image2={"/public/assets/mongodb.svg"} language_name2={"MongoDB"} language_image3={"/public/assets/git.svg"} language_name3={"Git"}/>
+                    <CircleCard title={"Web"} language_image1={"/assets/react.svg"} language_name1={"React"} language_image2={"/assets/go.svg"} language_name2={"Golang"} language_image3={"/assets/fastapi.svg"} language_name3={"FastApi"}/>
+                    <CircleCard title={"Mobile"} language_image1={"/assets/flutter.svg"} language_name1={"Flutter"}/>
+                    <CircleCard title={"Desktop"} language_image1={"/assets/csharp.svg"} language_name1={"C#"} language_image2={"/assets/java.svg"} language_name2={"Java"} language_image3={"/assets/python.svg"} language_name3={"Python"}/>
+                    <CircleCard title={"Autre"} language_image1={"/assets/docker.svg"} language_name1={"Docker"} language_image2={"/assets/mongodb.svg"} language_name2={"MongoDB"} language_image3={"/assets/git.svg"} language_name3={"Git"}/>
                 </div>
             </div>
             <Footer />

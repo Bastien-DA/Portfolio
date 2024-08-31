@@ -28,7 +28,7 @@ function Experiences() {
             </header>
             <div className="all-experiences">
                 {!experience &&
-                    <RectangularCard image={"/public/assets/panier-basket.png"} title={"BasketData"} url={"/experiences/1"}
+                    <RectangularCard image={"/assets/panier-basket.png"} title={"BasketData"} url={"/experiences/1"}
                                      listElements={[
                                          "Développement d'une api en python avec fast api",
                                          "Déploiement de l'api et de la base de données Sqlite avec docker",
@@ -38,7 +38,7 @@ function Experiences() {
                 {experience === "1" &&
                     <div className={"entreprise-container"}>
                         <div className={"entreprise-info"}>
-                            <img src={"/src/assets/panier-basket1.jpg"} alt={""}/>
+                            <img src={"/assets/panier-basket1.jpg"} alt={""}/>
                             <div className={"information"}>
                                 <h1>BasketData</h1>
                                 <p>BasketData est une entreprise fondée en 2023 par
